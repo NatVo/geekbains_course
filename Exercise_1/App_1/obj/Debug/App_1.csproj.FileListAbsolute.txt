@@ -1,0 +1,14 @@
+C:\Users\natvo\Desktop\GeekBrains\c_sharp_dz\Exercise_1\App_1\bin\Debug\App_1.exe.config
+C:\Users\natvo\Desktop\GeekBrains\c_sharp_dz\Exercise_1\App_1\bin\Debug\App_1.exe
+C:\Users\natvo\Desktop\GeekBrains\c_sharp_dz\Exercise_1\App_1\bin\Debug\App_1.pdb
+C:\Users\natvo\Desktop\GeekBrains\c_sharp_dz\Exercise_1\App_1\obj\Debug\App_1.csprojAssemblyReference.cache
+C:\Users\natvo\Desktop\GeekBrains\c_sharp_dz\Exercise_1\App_1\obj\Debug\App_1.csproj.CoreCompileInputs.cache
+C:\Users\natvo\Desktop\GeekBrains\c_sharp_dz\Exercise_1\App_1\obj\Debug\App_1.exe
+C:\Users\natvo\Desktop\GeekBrains\c_sharp_dz\Exercise_1\App_1\obj\Debug\App_1.pdb
+C:\Users\natvo\Desktop\GeekBrains\Vorobeva_Natalia_ex_1\Exercise_1\App_1\bin\Debug\App_1.exe.config
+C:\Users\natvo\Desktop\GeekBrains\Vorobeva_Natalia_ex_1\Exercise_1\App_1\bin\Debug\App_1.exe
+C:\Users\natvo\Desktop\GeekBrains\Vorobeva_Natalia_ex_1\Exercise_1\App_1\bin\Debug\App_1.pdb
+C:\Users\natvo\Desktop\GeekBrains\Vorobeva_Natalia_ex_1\Exercise_1\App_1\obj\Debug\App_1.csprojAssemblyReference.cache
+C:\Users\natvo\Desktop\GeekBrains\Vorobeva_Natalia_ex_1\Exercise_1\App_1\obj\Debug\App_1.csproj.CoreCompileInputs.cache
+C:\Users\natvo\Desktop\GeekBrains\Vorobeva_Natalia_ex_1\Exercise_1\App_1\obj\Debug\App_1.exe
+C:\Users\natvo\Desktop\GeekBrains\Vorobeva_Natalia_ex_1\Exercise_1\App_1\obj\Debug\App_1.pdb
