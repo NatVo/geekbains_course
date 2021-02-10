@@ -20,13 +20,13 @@ namespace App_5
             
             text = RemoveExtraSymb(text);
             string[] str_elems = text.Split(' ');
-            Console.WriteLine(text);
-            Console.WriteLine();
+            //Console.WriteLine(text);
+            //Console.WriteLine();
 
             string res_str = "";
             for (int i = 0; i < str_elems.Length; i++)
             {
-                if (str_elems[i].Length >= num_l)
+                if (str_elems[i].Length <= num_l)
                 {
                     res_str += str_elems[i] + " ";
                 }
@@ -54,7 +54,7 @@ namespace App_5
                 }
             }
 
-            Console.WriteLine(max_l_word);
+            //Console.WriteLine(max_l_word);
             return new Tuple<string, int>(max_l_word, max_length);
         }
 
@@ -63,14 +63,14 @@ namespace App_5
 
             string new_text = RemoveExtraSymb(text);
             string[] str_elems = new_text.Split(' ');
-            Console.WriteLine(new_text);
-            Console.WriteLine();
+            //Console.WriteLine(new_text);
+            //Console.WriteLine();
 
             for (int i = 0; i < str_elems.Length; i++)
             {
                 if (str_elems[i].EndsWith(elem.ToString()))
                 {
-                    Console.WriteLine(str_elems[i]);
+                    //Console.WriteLine(str_elems[i]);
                     int index = text.IndexOf(str_elems[i]);
                     text = (index < 0) ? text : text.Remove(index, str_elems[i].Length);
                 }
@@ -87,16 +87,14 @@ namespace App_5
             text = RemoveExtraSymb(text);
 
             string[] str_elems = text.Split(' ');
-            Console.WriteLine(text);
-            Console.WriteLine();
+            //Console.WriteLine(text);
+            //Console.WriteLine();
             StringBuilder res_str = new StringBuilder("");
 
             for (int i = 0; i < str_elems.Length; i++)
             {
                 if (str_elems[i].Length == max_word.Item2)
-                {
                     res_str.Append(str_elems[i] + " ");
-                }
             }
 
             Console.WriteLine(res_str);
