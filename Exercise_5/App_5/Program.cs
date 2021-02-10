@@ -153,6 +153,128 @@ namespace App_5
 
         }
 
+        
+        static void WorstScholars(string file_path)
+        {
+            if (File.Exists(file_path))
+            {
+                string[] f_lines = File.ReadAllLines(file_path);
+                double[] average = new double[int.Parse(f_lines[0])];
+                double[] tmp_average = new double[int.Parse(f_lines[0])];
+                string[] names = new string[int.Parse(f_lines[0])];
+
+                string[] elems;
+                char[] num_str;
+                double sum;
+
+                for (int i = 1; i < f_lines.Length; i++)
+                {
+                    try
+                    {
+
+                        elems = f_lines[i].Split(' ');
+
+                        num_str = f_lines[i].Where(Char.IsDigit).ToArray();
+                        sum = 0;
+
+                        for (int j = 0; j < num_str.Length; j++)
+                            sum += int.Parse(num_str[j].ToString());                        
+                        sum /= num_str.Length;
+
+                        average[i - 1] = Math.Round(sum, 3);
+                        tmp_average[i - 1] = Math.Round(sum, 3);
+                        names[i - 1] = elems[0] + " " + elems[1];
+                        Console.WriteLine($"{names[i - 1]} {num_str[0]} {num_str[1]} {num_str[2]}, средний балл ученика = {average[i - 1]}");
+
+                    }
+                    catch
+                    {
+                        average[i - 1] = 0;
+                        tmp_average[i - 1] = 0;
+                        Console.WriteLine("Строка с информацией об ученике некорректна!");
+                    }
+                     
+                }
+
+
+                Array.Sort(tmp_average);
+
+                int num_remove = 0;
+                tmp_average = tmp_average.Where(val => val != num_remove).ToArray();
+                average = average.Where(val => val != num_remove).ToArray();
+
+                int N = 3;
+                if (tmp_average.Length < 3)
+                    N = tmp_average.Length;
+
+                //foreach (double a in tmp_average) Console.Write(a + " ");
+                //Console.WriteLine("\n");
+                //foreach (double aa in average) Console.Write(aa + " ");
+                //Console.WriteLine("\n");
+
+
+                Dictionary<string, double> result = new Dictionary<string, double>();
+                
+
+                for (int i = 0; i < N; i++)
+                {
+                    for (int j = 0; j < average.Length; j++)
+                    {
+                        if (average[j] == tmp_average[i])
+                        {
+                            try
+                            {
+                                result.Add(names[j], average[j]);
+                            }
+                            catch { }
+                            
+
+                        }
+                            
+                    }
+                }
+
+                Console.WriteLine($"\nУченики с самыми низким средним баллом: ");
+                foreach (var item in result)
+                    Console.WriteLine($"{item.Key} - {item.Value}");
+
+            }
+            else
+                Console.WriteLine($"Не получилось найти и открыть файл: {file_path}");
+
+        }
+
+        static void TrueFalse(string file_path)
+        {
+            if (File.Exists(file_path))
+            {
+                string[] f_lines = File.ReadAllLines(file_path);
+                Random rand_num = new Random();
+
+                int n;
+                int counter = 0;
+
+                for (int i = 0; i < 5; i++)
+                {
+                    n = rand_num.Next(0, f_lines.Length);
+                    string[] elems = f_lines[n].Split('|');
+                    Console.WriteLine($"\n{elems[0]}");
+                    Console.WriteLine("Введите ответ да/нет: ");
+                    string answer = Console.ReadLine();
+
+                    if (answer == elems[1])
+                        counter += 1;
+
+                }
+
+                Console.WriteLine($"Игра закончена, ваш счёт: {counter}");
+
+
+            }
+            else
+                Console.WriteLine($"Не получилось найти и открыть файл: {file_path}");
+        }
+
 
         static void Main(string[] args)
         {
@@ -254,20 +376,35 @@ namespace App_5
                             break;
 
                         case 4:
-                            output_help.OutputTaskText("Решить задачу с логинами из урока 2, только логины и пароли считать из файла в массив." +
-                                "\nСоздайте структуру Account, содержащую Login и Password.", 4);
+                            output_help.OutputTaskText("Задача ЕГЭ." +
+                                "\n* На вход программе подаются сведения о сдаче экзаменов учениками 9 - х классов некоторой средней" +
+                                "\nшколы.В первой строке сообщается количество учеников N, которое не меньше 10, но не" +
+                                "\nпревосходит 100, каждая из следующих N строк имеет следующий формат:" +
+                                "\n< Фамилия > < Имя > < оценки >," +
+                                "\nгде < Фамилия > — строка, состоящая не более чем из 20 символов, < Имя > — строка, состоящая не" +
+                                "\nболее чем из 15 символов, < оценки > — через пробел три целых числа, соответствующие оценкам по" +
+                                "\nпятибалльной системе. < Фамилия > и<Имя>, а также < Имя > и < оценки > разделены одним пробелом." +
+                                "\nПример входной строки:" +
+                                "\nИванов Петр 4 5 3" +
+                                "\nТребуется написать как можно более эффективную программу, которая будет выводить на экран" +
+                                "\nфамилии и имена трёх худших по среднему баллу учеников.Если среди остальных есть ученики," +
+                                "\nнабравшие тот же средний балл, что и один из трёх худших, следует вывести и их фамилии и имена." +
+                                "\nДостаточно решить 2 задачи.Старайтесь разбивать программы на подпрограммы.Переписывайте в" +
+                                "\nначало программы условие и свою фамилию.Все программы сделать в одном решении.Для решения" +
+                                "\nзадач используйте неизменяемые строки(string)", 4);
 
+                            //WorstScholars("scholars_0.txt");
+                            WorstScholars("scholars_1.txt");
                             break;
                         case 5:
 
-                            output_help.OutputTaskText("*а) Реализовать библиотеку с классом для работы с двумерным массивом. Реализовать конструктор, заполняющий массив случайными числами." +
-                                "\nСоздать методы, которые возвращают сумму всех элементов массива, сумму всех элементов массива больше заданного, свойство," +
-                                "\nвозвращающее минимальный элемент массива," +
-                                "\nсвойство, возвращающее максимальный элемент массива, метод, возвращающий номер максимального элемента массива" +
-                                "\n(через параметры, используя модификатор ref или out)." +
-                                "\n* *б) Добавить конструктор и методы, которые загружают данные из файла и записывают данные в файл." +
-                                "\n* *в) Обработать возможные исключительные ситуации при работе с файлами.", 5);
-
+                            output_help.OutputTaskText("**Написать игру «Верю. Не верю»." +
+                                "\nВ файле хранятся вопрос и ответ, правда это или нет." +
+                                "\nНапример: «Шариковую ручку изобрели в древнем Египте», «Да»." +
+                                "\nКомпьютер загружает эти данные, случайным образом выбирает 5 вопросов и задаёт их игроку." +
+                                "\nИгрок отвечает Да или Нет на каждый вопрос и набирает баллы за каждый правильный ответ." +
+                                "\nСписок вопросов ищите во вложении или воспользуйтесь интернетом.,", 5);
+                            TrueFalse("true_false.txt");
 
                             break;
 
