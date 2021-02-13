@@ -1,0 +1,14 @@
+C:\Users\natvo\source\repos\Exercise_5\App_5\bin\Debug\App_5.exe.config
+C:\Users\natvo\source\repos\Exercise_5\App_5\bin\Debug\App_5.exe
+C:\Users\natvo\source\repos\Exercise_5\App_5\bin\Debug\App_5.pdb
+C:\Users\natvo\source\repos\Exercise_5\App_5\obj\Debug\App_5.csprojAssemblyReference.cache
+C:\Users\natvo\source\repos\Exercise_5\App_5\obj\Debug\App_5.csproj.CoreCompileInputs.cache
+C:\Users\natvo\source\repos\Exercise_5\App_5\obj\Debug\App_5.exe
+C:\Users\natvo\source\repos\Exercise_5\App_5\obj\Debug\App_5.pdb
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_5\App_5\bin\Debug\App_5.exe.config
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_5\App_5\bin\Debug\App_5.exe
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_5\App_5\bin\Debug\App_5.pdb
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_5\App_5\obj\Debug\App_5.csprojAssemblyReference.cache
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_5\App_5\obj\Debug\App_5.csproj.CoreCompileInputs.cache
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_5\App_5\obj\Debug\App_5.exe
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_5\App_5\obj\Debug\App_5.pdb

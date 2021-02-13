@@ -1,0 +1,7 @@
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_4\App_4\bin\Debug\App_4.exe.config
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_4\App_4\bin\Debug\App_4.exe
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_4\App_4\bin\Debug\App_4.pdb
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_4\App_4\obj\Debug\App_4.csprojAssemblyReference.cache
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_4\App_4\obj\Debug\App_4.csproj.CoreCompileInputs.cache
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_4\App_4\obj\Debug\App_4.exe
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_4\App_4\obj\Debug\App_4.pdb
