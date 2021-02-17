@@ -20,7 +20,6 @@ C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\bin\Debug\ne
 C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\bin\Debug\netcoreapp3.1\App_7.dll
 C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\bin\Debug\netcoreapp3.1\App_7.pdb
 C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\obj\Debug\netcoreapp3.1\App_7.csprojAssemblyReference.cache
-C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\obj\Debug\netcoreapp3.1\App_7.Form1.resources
 C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\obj\Debug\netcoreapp3.1\App_7.csproj.GenerateResource.cache
 C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\obj\Debug\netcoreapp3.1\App_7.AssemblyInfoInputs.cache
 C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\obj\Debug\netcoreapp3.1\App_7.AssemblyInfo.cs
@@ -28,3 +27,4 @@ C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\obj\Debug\ne
 C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\obj\Debug\netcoreapp3.1\App_7.dll
 C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\obj\Debug\netcoreapp3.1\App_7.pdb
 C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\obj\Debug\netcoreapp3.1\App_7.genruntimeconfig.cache
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7\obj\Debug\netcoreapp3.1\App_7.Doubler.resources

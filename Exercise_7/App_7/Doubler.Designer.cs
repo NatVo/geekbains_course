@@ -1,7 +1,7 @@
 ﻿
 namespace App_7
 {
-    partial class Form1
+    partial class Doubler
     {
         /// <summary>
         ///  Required designer variable.
@@ -160,7 +160,7 @@ namespace App_7
             this.labelGameOver.Size = new System.Drawing.Size(0, 15);
             this.labelGameOver.TabIndex = 12;
             // 
-            // Form1
+            // Doubler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -176,8 +176,8 @@ namespace App_7
             this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.buttonPlay);
             this.Controls.Add(this.menuStrip1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Doubler";
+            this.Text = "Doubler";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

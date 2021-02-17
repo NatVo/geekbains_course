@@ -1,0 +1,15 @@
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\bin\Debug\netcoreapp3.1\App_7_guess.exe
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\bin\Debug\netcoreapp3.1\App_7_guess.deps.json
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\bin\Debug\netcoreapp3.1\App_7_guess.runtimeconfig.json
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\bin\Debug\netcoreapp3.1\App_7_guess.runtimeconfig.dev.json
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\bin\Debug\netcoreapp3.1\App_7_guess.dll
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\bin\Debug\netcoreapp3.1\App_7_guess.pdb
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\obj\Debug\netcoreapp3.1\App_7_guess.csprojAssemblyReference.cache
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\obj\Debug\netcoreapp3.1\App_7_guess.Form_Guess.resources
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\obj\Debug\netcoreapp3.1\App_7_guess.csproj.GenerateResource.cache
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\obj\Debug\netcoreapp3.1\App_7_guess.AssemblyInfoInputs.cache
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\obj\Debug\netcoreapp3.1\App_7_guess.AssemblyInfo.cs
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\obj\Debug\netcoreapp3.1\App_7_guess.csproj.CoreCompileInputs.cache
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\obj\Debug\netcoreapp3.1\App_7_guess.dll
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\obj\Debug\netcoreapp3.1\App_7_guess.pdb
+C:\Users\natvo\Desktop\GeekBrains\geekbains_course\Exercise_7\App_7_guess\obj\Debug\netcoreapp3.1\App_7_guess.genruntimeconfig.cache

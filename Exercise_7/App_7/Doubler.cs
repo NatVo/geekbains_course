@@ -8,16 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+//Воробьева Наталья
+//а) Добавить в программу «Удвоитель» подсчет количества отданных команд.
+//б) Добавить меню и команду «Играть». 
+//При нажатии появляется сообщение, какое число должен получить игрок. 
+//Игрок должен постараться получить это число за минимальное количество ходов.
+//в) *Добавить кнопку «Отменить», которая отменяет последние ходы.
+
 namespace App_7
 {
-    public partial class Form1 : Form
+    public partial class Doubler : Form
     {
         Random random = new Random();
         int rand_num;
 
         bool game_flag = false;
         string steps;
-        public Form1()
+        public Doubler()
         {
             InitializeComponent();
             //
