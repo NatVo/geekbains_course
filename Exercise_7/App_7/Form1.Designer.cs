@@ -47,7 +47,7 @@ namespace App_7
             // 
             // buttonPlay
             // 
-            this.buttonPlay.Location = new System.Drawing.Point(12, 160);
+            this.buttonPlay.Location = new System.Drawing.Point(130, 160);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(126, 23);
             this.buttonPlay.TabIndex = 0;
@@ -62,7 +62,7 @@ namespace App_7
             this.toolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(243, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(420, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -81,7 +81,7 @@ namespace App_7
             // 
             // buttonReset
             // 
-            this.buttonReset.Location = new System.Drawing.Point(12, 189);
+            this.buttonReset.Location = new System.Drawing.Point(129, 192);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(127, 23);
             this.buttonReset.TabIndex = 4;
@@ -144,7 +144,7 @@ namespace App_7
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(12, 221);
+            this.buttonCancel.Location = new System.Drawing.Point(129, 221);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(127, 23);
             this.buttonCancel.TabIndex = 11;
@@ -155,7 +155,7 @@ namespace App_7
             // labelGameOver
             // 
             this.labelGameOver.AutoSize = true;
-            this.labelGameOver.Location = new System.Drawing.Point(89, 247);
+            this.labelGameOver.Location = new System.Drawing.Point(147, 164);
             this.labelGameOver.Name = "labelGameOver";
             this.labelGameOver.Size = new System.Drawing.Size(0, 15);
             this.labelGameOver.TabIndex = 12;
@@ -164,7 +164,7 @@ namespace App_7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(243, 268);
+            this.ClientSize = new System.Drawing.Size(420, 268);
             this.Controls.Add(this.labelGameOver);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.labelCount1);

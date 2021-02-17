@@ -16,7 +16,7 @@ namespace App_7
         int rand_num;
 
         bool game_flag = false;
-        bool flag = true;
+        string steps;
         public Form1()
         {
             InitializeComponent();
@@ -34,9 +34,28 @@ namespace App_7
 
         }
 
-        private int NumSteps()
+        private void NumSteps()
         {
-            return 0;
+            int counter_1 = 0;
+            int counter_2 = 0;
+            while (rand_num  > 0)
+            {
+                if (rand_num % 2 == 0)
+                {
+                    rand_num /= 2;
+                    counter_1 += 1;
+                }
+                else 
+                {
+                    rand_num -= 1;
+                    counter_2 += 1;
+                }
+
+            }
+
+            labelCountx2.Text = labelCountx2.Text + "   возможное наим. число ходов x2: " + counter_1.ToString();
+            labelCount1.Text = labelCount1.Text + "   возможное наим. число ходов +1: " + counter_2.ToString();
+
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -45,7 +64,8 @@ namespace App_7
             {
                 labelOutput.Text = (int.Parse(labelOutput.Text) * 2).ToString();
                 labelCountx2.Text = (int.Parse(labelCountx2.Text) + 1).ToString();
-                flag = true;
+                steps += "x";
+
             }
 
 
@@ -53,11 +73,12 @@ namespace App_7
             {
                 labelOutput.Text = (int.Parse(labelOutput.Text) + 1).ToString();
                 labelCount1.Text = (int.Parse(labelCount1.Text) + 1).ToString();
-                flag = false;
+                steps += "-";
             }
 
             if (game_flag && int.Parse(labelOutput.Text) == rand_num)
             {
+                NumSteps();
                 buttonReset.Hide();
                 buttonCancel.Hide();
                 buttonPlay.Hide();
@@ -76,16 +97,24 @@ namespace App_7
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            if (flag)
+            try
             {
-                labelOutput.Text = (int.Parse(labelOutput.Text) / 2).ToString();
-                labelCountx2.Text = (int.Parse(labelCountx2.Text) - 1).ToString();
+                if (steps[steps.Length - 1] == 'x')
+                {
+                    labelOutput.Text = (int.Parse(labelOutput.Text) / 2).ToString();
+                    labelCountx2.Text = (int.Parse(labelCountx2.Text) - 1).ToString();
+                }
+                else
+                {
+                    labelOutput.Text = (int.Parse(labelOutput.Text) - 1).ToString();
+                    labelCount1.Text = (int.Parse(labelCount1.Text) - 1).ToString();
+                }
+                steps = steps.Remove(steps.Length - 1);
             }
-            else
-            {
-                labelOutput.Text = (int.Parse(labelOutput.Text) - 1).ToString();
-                labelCount1.Text = (int.Parse(labelCount1.Text) - 1).ToString();
-            }
+            
+            catch
+            { }
+
 
         }
 
@@ -94,6 +123,8 @@ namespace App_7
             labelOutput.Text = "0";
             labelCountx2.Text = "0";
             labelCount1.Text = "0";
+
+            steps = "";
         }
         private void buttonPlay_Click(object sender, EventArgs e)
         {
