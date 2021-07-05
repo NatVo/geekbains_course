@@ -1,0 +1,7 @@
+N=4
+3333333333
+min_value=-50
+M=8
+njkd
+cndjsk
+max_value=50
